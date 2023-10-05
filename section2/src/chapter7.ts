@@ -17,3 +17,24 @@ let a: void;
 // a = ""
 // a = {}
 a = undefined;
+
+// function func3(): undefined {
+//   return; // return undefined
+// }
+
+// function func4(): null {
+//   return null // return undefined
+// }
+
+// never
+// 존재하지 않는 불가능한 타입
+
+function func3(): never {
+  while (true) {}
+}
+
+function func4(): never {
+  throw new Error();
+}
+
+// strictNullChecks를 해제해도 null을 담을 수 없고, any도 저장할 수 없음
