@@ -35,9 +35,10 @@ class Company {
     // private totalEmployee;
 
     constructor(protected name: string, public establishedAt: string, private totalEmployee: number) {
-        this.name = name;
-        this.establishedAt = establishedAt;
-        this.totalEmployee = totalEmployee;
+        // ? 생성자에 접근 제어자를 입력하면 아래 코드도 자동으로 입력됨
+        // this.name = name;
+        // this.establishedAt = establishedAt;
+        // this.totalEmployee = totalEmployee;
     }
 }
 
