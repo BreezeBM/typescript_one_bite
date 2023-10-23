@@ -25,7 +25,7 @@ type ReturnType<T> = T extends () => infer R ? R : never;
 // 여기서는 () => string이 참이 될려면 string타입으로 추론되면 됨,
 // * 이때 R은 string으로 추론됨
 type A = ReturnType<FuncA>;
-
+``;
 type B = ReturnType<FuncB>;
 
 // number타입을 넣게 되면 어떻게든 참이되도록 하는 슈퍼타입이 없음 -> R을 추론할 수 없게됨
